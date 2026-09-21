@@ -27,7 +27,7 @@ ORDERS_PLACED = Counter('orders_placed_total', 'Total number of orders placed')
 # 2. Gauge
 ORDERS_WAITING = Gauge('orders_waiting', 'Number of orders currently being prepared')
 # 3. Histogram
-COOK_TIME_HIST = Histogram('cook_time_seconds', 'Time taken to prepare an order', buckets=[0.1, 0.5, 1.0, 2.0])
+COOK_TIME_HIST = Histogram('cook_time_seconds', 'Time taken to prepare an order', buckets=[0.1, 0.5, 1.0, 2.5, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 15.0, 20.0, 30.0])
 # 4. Summary
 COOK_TIME_SUM = Summary('cook_time_summary_seconds', 'Summary of cook times')
 
@@ -52,6 +52,8 @@ def place_order():
         # Simulate the kitchen making the food
         cook_time = random.uniform(5.0, 10.0)
         time.sleep(cook_time)
+
+        # time.sleep(random.uniform(5.0, 10.0) + 15)
         
         logger.info("Order complete", extra={"request_id": request_id, "service": "food-api", "severity": "INFO"})
         return jsonify({"status": "Order ready!", "order_id": request_id}), 200
