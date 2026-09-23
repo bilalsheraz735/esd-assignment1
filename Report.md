@@ -69,6 +69,7 @@ docker-compose up -d
 # 2. Install app dependencies and start the Flask app ON THE HOST
 pip install -r requirements.txt
 python app.py
+<img width="840" height="866" alt="Screenshot 2026-07-14 143453" src="https://github.com/user-attachments/assets/48efd0f2-60dd-4ba6-a6b3-55fc7020bc08" />
 
 # 3. Generate traffic (PowerShell)
 for ($i=1; $i -le 10; $i++) { curl.exe -X POST http://localhost:5000/order }
