@@ -78,25 +78,13 @@ for ($i=1; $i -le 10; $i++) { curl.exe -X POST http://localhost:5000/order }
 
 | Service | URL | Credentials |
 | --- | --- | --- |
-| Flask app | `http://localhost:5000` | —
-
- |
-| Raw metrics | `http://localhost:5000/metrics` | —
-
- |
-| Prometheus | `http://localhost:9090` | —
-
- |
-| Grafana | `http://localhost:3000` | `admin` / `admin`<br> |
-| Elasticsearch | `http://localhost:9200` | security disabled
-
- |
-| Kibana | `http://localhost:5601` | —
-
- |
-| Node Exporter | `http://localhost:9100/metrics` | —
-
- |
+| Flask app | `http://localhost:5000` | — |
+| Raw metrics | `http://localhost:5000/metrics` | — |
+| Prometheus | `http://localhost:9090` | — |
+| Grafana | `http://localhost:3000` | `admin` / `admin` |
+| Elasticsearch | `http://localhost:9200` | security disabled |
+| Kibana | `http://localhost:5601` | — |
+| Node Exporter | `http://localhost:9100/metrics` | — |
 
 **Clean-up:**
 
