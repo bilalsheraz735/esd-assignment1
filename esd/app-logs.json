@@ -441,3 +441,71 @@
 {"asctime": "2026-09-21 12:43:30,167", "levelname": "INFO", "message": "Order complete", "request_id": "ord_1065", "service": "food-api", "severity": "INFO"}
 {"asctime": "2026-09-21 12:43:30,397", "levelname": "INFO", "message": "Order received", "request_id": "ord_4755", "service": "food-api", "severity": "INFO"}
 {"asctime": "2026-09-21 12:43:37,174", "levelname": "INFO", "message": "Order complete", "request_id": "ord_4755", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 19:38:13,939", "levelname": "INFO", "message": "Server started", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 19:39:26,408", "levelname": "INFO", "message": "Server started", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 19:47:39,689", "levelname": "INFO", "message": "Order received", "request_id": "ord_9846", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 19:47:48,547", "levelname": "INFO", "message": "Order complete", "request_id": "ord_9846", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:47:08,460", "levelname": "INFO", "message": "Server started", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:47:13,286", "levelname": "INFO", "message": "Order received", "request_id": "ord_7743", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:47:21,883", "levelname": "INFO", "message": "Order complete", "request_id": "ord_7743", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:47:22,125", "levelname": "INFO", "message": "Order received", "request_id": "ord_9233", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:47:29,401", "levelname": "INFO", "message": "Order complete", "request_id": "ord_9233", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:47:29,637", "levelname": "INFO", "message": "Order received", "request_id": "ord_9907", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:47:39,178", "levelname": "INFO", "message": "Order complete", "request_id": "ord_9907", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:47:39,555", "levelname": "INFO", "message": "Order received", "request_id": "ord_1248", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:47:44,942", "levelname": "INFO", "message": "Order complete", "request_id": "ord_1248", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:47:45,200", "levelname": "INFO", "message": "Order received", "request_id": "ord_9493", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:47:50,425", "levelname": "INFO", "message": "Order complete", "request_id": "ord_9493", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:47:50,656", "levelname": "INFO", "message": "Order received", "request_id": "ord_5132", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:48:00,186", "levelname": "INFO", "message": "Order complete", "request_id": "ord_5132", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:48:00,628", "levelname": "INFO", "message": "Order received", "request_id": "ord_9888", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:48:05,967", "levelname": "INFO", "message": "Order complete", "request_id": "ord_9888", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:48:06,209", "levelname": "INFO", "message": "Order received", "request_id": "ord_6145", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:48:15,339", "levelname": "INFO", "message": "Order complete", "request_id": "ord_6145", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:48:15,572", "levelname": "INFO", "message": "Order received", "request_id": "ord_5922", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:48:20,742", "levelname": "INFO", "message": "Order complete", "request_id": "ord_5922", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:48:20,972", "levelname": "INFO", "message": "Order received", "request_id": "ord_6002", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:48:28,494", "levelname": "INFO", "message": "Order complete", "request_id": "ord_6002", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:51:58,929", "levelname": "INFO", "message": "Server started", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:52:08,709", "levelname": "INFO", "message": "Server started", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:52:24,494", "levelname": "INFO", "message": "Order received", "request_id": "ord_3186", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:52:48,954", "levelname": "INFO", "message": "Order complete", "request_id": "ord_3186", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:52:49,236", "levelname": "INFO", "message": "Order received", "request_id": "ord_8997", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:53:11,002", "levelname": "INFO", "message": "Order complete", "request_id": "ord_8997", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:53:11,242", "levelname": "INFO", "message": "Order received", "request_id": "ord_5981", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:53:35,341", "levelname": "INFO", "message": "Order complete", "request_id": "ord_5981", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:53:35,600", "levelname": "INFO", "message": "Order received", "request_id": "ord_4308", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:53:56,844", "levelname": "INFO", "message": "Order complete", "request_id": "ord_4308", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:53:57,072", "levelname": "INFO", "message": "Order received", "request_id": "ord_5599", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:54:19,413", "levelname": "INFO", "message": "Order complete", "request_id": "ord_5599", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:54:19,679", "levelname": "INFO", "message": "Order received", "request_id": "ord_3879", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:54:39,691", "levelname": "INFO", "message": "Order complete", "request_id": "ord_3879", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:54:39,935", "levelname": "INFO", "message": "Order received", "request_id": "ord_4365", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:55:04,867", "levelname": "INFO", "message": "Order complete", "request_id": "ord_4365", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:55:05,141", "levelname": "INFO", "message": "Order received", "request_id": "ord_2063", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:55:29,574", "levelname": "INFO", "message": "Order complete", "request_id": "ord_2063", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:55:29,876", "levelname": "INFO", "message": "Order received", "request_id": "ord_5425", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:55:50,831", "levelname": "INFO", "message": "Order complete", "request_id": "ord_5425", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:55:51,124", "levelname": "INFO", "message": "Order received", "request_id": "ord_4561", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:56:12,599", "levelname": "INFO", "message": "Order complete", "request_id": "ord_4561", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:58:23,698", "levelname": "INFO", "message": "Server started", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:59:08,517", "levelname": "INFO", "message": "Order received", "request_id": "ord_3222", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:59:15,217", "levelname": "INFO", "message": "Order complete", "request_id": "ord_3222", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:59:15,491", "levelname": "INFO", "message": "Order received", "request_id": "ord_4603", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:59:22,301", "levelname": "INFO", "message": "Order complete", "request_id": "ord_4603", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:59:22,586", "levelname": "INFO", "message": "Order received", "request_id": "ord_4601", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:59:28,588", "levelname": "INFO", "message": "Order complete", "request_id": "ord_4601", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:59:28,828", "levelname": "INFO", "message": "Order received", "request_id": "ord_1314", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:59:33,935", "levelname": "INFO", "message": "Order complete", "request_id": "ord_1314", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:59:34,211", "levelname": "INFO", "message": "Order received", "request_id": "ord_5227", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:59:39,469", "levelname": "INFO", "message": "Order complete", "request_id": "ord_5227", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:59:39,751", "levelname": "INFO", "message": "Order received", "request_id": "ord_4138", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:59:45,249", "levelname": "INFO", "message": "Order complete", "request_id": "ord_4138", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:59:45,491", "levelname": "INFO", "message": "Order received", "request_id": "ord_4550", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:59:55,037", "levelname": "INFO", "message": "Order complete", "request_id": "ord_4550", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 20:59:55,295", "levelname": "INFO", "message": "Order received", "request_id": "ord_9032", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 21:00:05,259", "levelname": "INFO", "message": "Order complete", "request_id": "ord_9032", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 21:00:05,559", "levelname": "INFO", "message": "Order received", "request_id": "ord_6541", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 21:00:11,630", "levelname": "INFO", "message": "Order complete", "request_id": "ord_6541", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 21:00:11,932", "levelname": "INFO", "message": "Order received", "request_id": "ord_4456", "service": "food-api", "severity": "INFO"}
+{"asctime": "2026-09-23 21:00:17,445", "levelname": "INFO", "message": "Order complete", "request_id": "ord_4456", "service": "food-api", "severity": "INFO"}

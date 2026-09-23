@@ -107,9 +107,9 @@ del app-logs.json          # the host log file is not managed by Docker
 
 The `-v` flag is critical: without it, `prometheus_data`, `grafana_data`, and `es_data` survive, and the next run starts with stale history.
 
-`[Insert Screenshot: Terminal showing docker-compose up -d with all containers healthy]`
+<img width="1862" height="862" alt="Screenshot 2026-09-23 193954" src="esd screen shots/Screenshot 2026-09-23 193954.png" />
 
-`[Insert Screenshot: Successful POST /order response in PowerShell]`
+<img width="1862" height="862" alt="Screenshot 2026-09-23 193954" src="esd screen shots/Screenshot 2026-09-23 194755.png" />
 
 ---
 
@@ -138,7 +138,7 @@ scrape_configs:
 
 **`host.docker.internal` rather than a container name.** The Flask app runs **on the host**, not in Docker. The `extra_hosts` entry in `docker-compose.yml` maps that hostname to the Docker bridge gateway address, enabling the container to reach the host's `localhost:5000`.
 
-`[Insert Screenshot: Prometheus Targets page (http://localhost:9090/targets) showing both jobs UP]`
+<img width="1862" height="862" alt="Screenshot 2026-09-23 193954" src="esd screen shots/Screenshot 2026-09-23 195105.png" />
 
 ### B.2 Grafana configuration
 
@@ -189,7 +189,8 @@ The custom application dashboard consists of the following PromQL queries:
 4. **p95 response time (Time series):** `histogram_quantile(0.95, sum(rate(cook_time_seconds_bucket[5m])) by (le))`
 5. **Self-Explored Metric (Histogram vs. Summary Overlay):** Plotting `rate(cook_time_seconds_sum[5m]) / rate(cook_time_seconds_count[5m])` alongside the summary average on the same panel to empirically demonstrate that both metric types agree perfectly on the mathematical mean.
 
-`[Insert Screenshot: Grafana Application Dashboard]`
+<img width="1862" height="862" alt="Screenshot 2026-09-23 193954" src="esd screen shots/Screenshot 2026-09-20 230125.png" />
+
 
 ### B.6 Machine Metrics (Node Exporter)
 
@@ -206,7 +207,9 @@ All panels are automatically scoped to the `Bilal-Laptop` machine label set in `
 
 *(Note: Because Node Exporter is running in a minimal container without host bind-mounts for `/proc`, `/sys`, or `/`, it is measuring the Docker VM/container environment's resource limits rather than the raw host hardware).*
 
-`[Insert Screenshot: Grafana Node Exporter Full Dashboard (ID 1860)]`
+<img width="1862" height="862" alt="Screenshot 2026-09-23 193954" src="esd screen shots/Screenshot 2026-09-20 165559.png" />
+
+
 
 
 ## Part C — Logs
@@ -300,8 +303,10 @@ The data view is `filebeat-*` using KQL syntax.
 * **Trace a specific order:** `request_id : "ord_6197"` (Returns the exact `Order received` and `Order complete` pair for support tracing).
 * **Find errors:** `levelname : "ERROR"` (Currently returns zero results as the application is strictly a happy-path simulation).
 
-`[Insert Screenshot: Kibana Discover showing parsed fields for food-api logs]`
-`[Insert Screenshot: Kibana search for request_id ord_6197 returning the received/complete pair]`
+<img width="1862" height="862" alt="Screenshot 2026-09-23 193954" src="esd screen shots/Screenshot 2026-09-23 200013.png" />
+
+<img width="1862" height="862" alt="Screenshot 2026-09-23 193954" src="esd screen shots/Screenshot 2026-09-23 200143.png" />
+
 
 ## Part D — System Design
 
@@ -425,11 +430,13 @@ time.sleep(cook_time)
 
 
 
-`[Insert Screenshot: Grafana p95 latency - baseline window]`
-`[Insert Screenshot: Grafana p95 latency - fault window showing the spike]`
-`[Insert Screenshot: Grafana p95 latency - recovery window]`
-`[Insert Screenshot: Kibana Normal Logs]`
-`[Insert Screenshot: Kibana Delayed Logs]`
+<img width="1862" height="862" alt="Screenshot 2026-09-23 193954" src="esd screen shots/Screenshot 2026-09-23 204915.png" />
+
+<img width="1862" height="862" alt="Screenshot 2026-09-23 193954" src="esd screen shots/Screenshot 2026-09-23 205627.png" />
+
+<img width="1862" height="862" alt="Screenshot 2026-09-23 193954" src="esd screen shots/Screenshot 2026-09-23 210029.png" />
+<img width="1862" height="862" alt="Screenshot 2026-09-23 193954" src="esd screen shots/Screenshot 2026-09-23 205029.png" />
+<img width="1862" height="862" alt="Screenshot 2026-09-23 193954" src="esd screen shots/Screenshot 2026-09-23 205725.png" />
 
 ### E.2 Cardinality Explosion
 
@@ -456,8 +463,9 @@ While removing the label stops new series generation, the existing 100 series re
 
 **Conclusion:** Identifiers belong exclusively in structured logs (Elasticsearch), where inverted indexing makes high-cardinality lookups incredibly cheap and efficient. They should never be used as metric labels in Prometheus.
 
-`[Insert Screenshot: Cardinality Explosion Graph]`
-`[Insert Screenshot: Prometheus query count(demo_requests_total) reading 100]`
+<img width="1862" height="862" alt="Screenshot 2026-09-23 193954" src="esd screen shots/Screenshot 2026-09-20 231839.png" />
+
+<img width="1862" height="862" alt="Screenshot 2026-09-23 193954" src="esd screen shots/Screenshot 2026-09-20 161239.png" />
 
 ---
 
