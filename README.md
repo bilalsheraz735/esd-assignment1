@@ -79,6 +79,9 @@ esd/
 ├── docker-compose.yml     # 6 services + 3 named volumes
 ├── prometheus.yml         # 2 scrape jobs, 5s interval
 ├── filebeat.yml           # 1 file input, 1 rename processor, ES output
+├── dashboards/
+│   ├── fast_food_api.json       # exported Grafana dashboard (custom app dashboard)
+│   └── node_exporter_full.json  # exported Grafana dashboard (Node Exporter Full, ID 1860)
 ├── app-logs.json          # log file the app writes and Filebeat reads
 ├── Report.md              # full assignment write-up (Parts A–E + appendix)
 ├── README.md              # this file
@@ -145,6 +148,33 @@ Two Grafana dashboards are used:
 
 1. **Custom application dashboard** — order throughput, in-flight orders, average and p95 preparation time, and a histogram-vs-summary overlay.
 2. **Node Exporter Full** (community dashboard ID `1860`) — host CPU/memory/disk/network, scoped to the `Bilal-Laptop` machine label.
+
+Both dashboards are exported from Grafana and saved in the [`dashboards/`](./dashboards) folder:
+
+| File | Dashboard |
+|---|---|
+| `dashboards/fast_food_api.json` | Custom application dashboard |
+| `dashboards/node_exporter_full.json` | Node Exporter Full |
+
+### How to import them into Grafana
+
+1. Start the stack (`docker-compose up -d`) and open Grafana at http://localhost:3000 (`admin` / `admin`).
+2. Add the Prometheus data source: **Connections → Data sources → Add data source → Prometheus**, set the URL to `http://prometheus:9090` (the Compose service name, not `localhost`), then click **Save & test**.
+3. Go to **Dashboards → New → Import** (or http://localhost:3000/dashboard/import).
+4. Click **Upload dashboard JSON file**, choose `dashboards/fast_food_api.json`, then click **Import**.
+5. Repeat step 4 with `dashboards/node_exporter_full.json`.
+
+### How to use them
+
+- **Fast-food API dashboard:** send some orders first (see Quick start). Then set the time range (top right) to *Last 15 minutes* and auto-refresh to *5s*. Its four panels are: orders placed (last 5m), orders in process (gauge), average cooking time (summary), and p50/p90/p95 cooking time (histogram).
+- **Node Exporter Full:** use the dropdowns at the top: pick your Prometheus **Datasource**, then the Node Exporter **Job**, **Nodename** and **Instance**. The top rows show CPU, memory, disk and network. The other rows are collapsed; click a row title to expand it.
+
+### Common problems
+
+- **"Data source not found" on the fast-food dashboard:** this JSON refers to a Prometheus data source by UID `cg1pd4ussub5sa`, which only exists on the original Grafana. Either edit each of the 4 panels and re-select your Prometheus data source, or replace that UID in the JSON file with the UID of your own data source (visible in the address bar on the data source's settings page) before importing.
+- **Import fails or the dashboard is blank:** both files were exported from Grafana v13.2.4. Use the same Grafana version.
+- **Panels show "No data":** check http://localhost:9090/targets (both targets should be UP) and make sure you have sent recent traffic.
+- **Dashboards disappear after `docker-compose down -v`:** the Grafana volume is deleted, so just import the JSON files again.
 
 ## Experiments
 
